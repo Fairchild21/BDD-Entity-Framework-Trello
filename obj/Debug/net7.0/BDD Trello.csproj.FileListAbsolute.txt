@@ -1,0 +1,68 @@
+D:\BDD Trello\bin\Debug\net7.0\BDD Trello.exe
+D:\BDD Trello\bin\Debug\net7.0\BDD Trello.deps.json
+D:\BDD Trello\bin\Debug\net7.0\BDD Trello.runtimeconfig.json
+D:\BDD Trello\bin\Debug\net7.0\BDD Trello.dll
+D:\BDD Trello\bin\Debug\net7.0\BDD Trello.pdb
+D:\BDD Trello\bin\Debug\net7.0\Azure.Core.dll
+D:\BDD Trello\bin\Debug\net7.0\Azure.Identity.dll
+D:\BDD Trello\bin\Debug\net7.0\Humanizer.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\BDD Trello\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\BDD Trello\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\BDD Trello\bin\Debug\net7.0\System.CodeDom.dll
+D:\BDD Trello\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\BDD Trello\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\BDD Trello\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BDD Trello\bin\Debug\net7.0\System.Memory.Data.dll
+D:\BDD Trello\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\BDD Trello\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\BDD Trello\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\BDD Trello\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\BDD Trello\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.csproj.AssemblyReference.cache
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.GeneratedMSBuildEditorConfig.editorconfig
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.AssemblyInfoInputs.cache
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.AssemblyInfo.cs
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.csproj.CoreCompileInputs.cache
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.csproj.CopyComplete
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.dll
+D:\BDD Trello\obj\Debug\net7.0\refint\BDD Trello.dll
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.pdb
+D:\BDD Trello\obj\Debug\net7.0\BDD Trello.genruntimeconfig.cache
+D:\BDD Trello\obj\Debug\net7.0\ref\BDD Trello.dll
