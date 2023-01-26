@@ -105,9 +105,13 @@ public partial class ProjetContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false);
 
+            // entity.HasOne(x => x.IdCarteNavigation).WithMany(x => x.Etiquette).HasForeignKey(x => x.IdCarte)
+            //     .OnDelete(DeleteBehavior.ClientSetNull)
+            //     .HasConstraintName("FKEtiquetteID_ca__48CFD27E");
             entity.HasOne(d => d.IdCarteNavigation).WithMany(p => p.Etiquette)
                 .HasForeignKey(d => d.IdCarte)
-                .HasConstraintName("FK__Etiquette__ID_ca__4D94879B");
+                .OnDelete(DeleteBehavior.Restrict)
+                .HasConstraintName("etiquette_ibfk_1");
         });
 
         modelBuilder.Entity<Liste>(entity =>

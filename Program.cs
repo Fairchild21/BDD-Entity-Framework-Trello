@@ -9,7 +9,7 @@ namespace ConsoleApp
         {
             var context = new ProjetContext();
             
-            Repository<Utilisateur> repo = new Repository<Utilisateur>(context);
+            Repository<Utilisateur> repoUtilisateur = new Repository<Utilisateur>(context);
             Repository<Projet> repoProjet = new Repository<Projet>(context);
             Repository<Liste> repoListe = new Repository<Liste>(context);
             Repository<Carte> repoCarte = new Repository<Carte>(context);
@@ -40,22 +40,33 @@ namespace ConsoleApp
             // repoListe.AddEntity(list2);
 
             // //Ajout cartes
-            var list = new Liste();
-            list = repoListe.ReadEntity(1);
+            // var list = new Liste();
+            // list = repoListe.ReadEntity(1);
             // var card = new Carte("A faire", "Travailler sur la bdd", new DateTime(2023,01,17),1,list);
             // var card1 = new Carte("A faire", "Mettre à jour la bdd", new DateTime(2023,01,26),1,list1);
-            var card2 = new Carte("A faire", "Tester la bdd", new DateTime(2023,01,26),1,list);
+            // var card2 = new Carte("A faire", "Tester la bdd", new DateTime(2023,01,26),1,list);
             // repoCarte.AddEntity(card);
             // repoCarte.AddEntity(card1);
-            repoCarte.AddEntity(card2);
+            // repoCarte.AddEntity(card2);
 
-            // //Ajout commentaires            
+            // //Ajout commentaires  
+            // var card = new Carte();
+            // card = repoCarte.ReadEntity(1);       
+            // var user = new Utilisateur();
+            // user = repoUtilisateur.ReadEntity(2); 
             // var commentaire = new Commentaire("Cela avant doucement mais sûrement", new DateTime(2023,01,26),1,2, card, user1);
+            // var commentaire1 = new Commentaire("Update en cours", new DateTime(2023,01,26),2,2, card, user);
             // repoCommentaire.AddEntity(commentaire);
+            // repoCommentaire.AddEntity(commentaire1);
 
             // //Ajout etiquette
-            // var etiquette = new Etiquette("Urgent", "Rouge", 1, card);
-            // repoEtiquette.AddEntity(etiquette);
+            var carte = new Carte ();
+            carte = repoCarte.Find(1);
+            var etiquette = new Etiquette("Important", "Jaune", 1, carte);
+            // var etiquette1 = new Etiquette("Important", "Jaune", 1, carte);
+            repoEtiquette.AddEntity(etiquette);
+            // repoEtiquette.AddEntity(etiquette1);
+            
 
             // //Ajout utilisateurProjet
             // var userProj = new UtilisateurProjet(1, 1, proj, user2);

@@ -24,9 +24,10 @@ namespace BDD_Trello.Models
                     transaction.Commit();           
                     System.Console.WriteLine("Add Done");       
                 }
-                catch
+                catch(Exception ex)
                 {
                     transaction.Rollback();
+                    System.Console.WriteLine("Not add " + ex.Message);
                 }
             }
         }
@@ -65,7 +66,7 @@ namespace BDD_Trello.Models
             }
        } 
 
-        public T ReadEntity(int ID)
+        public T Find(int ID)
         {
             try
             {
