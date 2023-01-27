@@ -24,7 +24,7 @@ namespace BDD_Trello.Models
                     transaction.Commit();           
                     System.Console.WriteLine("Add Done");       
                 }
-                catch(Exception ex)
+                catch(ApplicationException ex)
                 {
                     transaction.Rollback();
                     System.Console.WriteLine("Not add " + ex.Message);
@@ -78,5 +78,43 @@ namespace BDD_Trello.Models
                 return null;
             }
         }    
+
+          public List<T> FindListEntity(List<int> listID)
+        {
+            try
+            {
+                List<T> resultat = new List<T>();
+                foreach (int element in listID)
+                {
+                    resultat.Add(_table.Find(element));
+                }
+                return resultat;              
+            }
+            catch (Exception)
+            {
+                System.Console.WriteLine("Au moins un de ces ID est introuvable...");
+                return null;
+            }
+        }
+
+        public bool Authentication(string entry, string password)
+        {
+            var users = _db.Utilisateurs.ToList();
+            bool connected = false;
+
+            foreach (Utilisateur u in users)
+            {                
+                if (u.Nom == entry || u.AdresseEmail == entry)
+                {
+                    if (u.MotDePasse == password)
+                    {
+                        connected = true;
+                        return connected;
+                    }
+                }
+            }
+            return connected;
+
+        }
     }
 }

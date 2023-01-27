@@ -24,7 +24,7 @@ public partial class Commentaire
         this.IdCommentaire = 0;
     }
 
-    public Commentaire(string contenu, DateTime dateCreation, int idCarte, int idUtilisateur, Carte idCarteNavigation, Utilisateur idUtilisateurNavigation)
+    public Commentaire(string contenu, int idCarte, int idUtilisateur, Carte idCarteNavigation, Utilisateur idUtilisateurNavigation, DateTime dateCreation = default)
     {
         this.IdCommentaire = 0;
         this.Contenu = contenu;
@@ -32,5 +32,10 @@ public partial class Commentaire
         this.IdCarte = idCarte;
         this.IdUtilisateur = idUtilisateur;
         this.IdUtilisateurNavigation = idUtilisateurNavigation;
+    }
+
+     public void changeContenu(string nouveauContenu)
+    {
+        Contenu = nouveauContenu;
     }
 }

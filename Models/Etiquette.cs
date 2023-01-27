@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BDD_Trello.Models;
 
@@ -28,4 +29,14 @@ public partial class Etiquette
         this.IdCarte = idCarte;
         this.IdCarteNavigation = idCarteNavigation;
     }
+
+          public void changeNom(string nouveauNom)
+        {
+            Nom = nouveauNom;
+        }
+
+        public void changeCouleur(string nouvelleCouleur)
+        {
+            Couleur = nouvelleCouleur;
+        } 
 }

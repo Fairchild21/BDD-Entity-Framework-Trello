@@ -28,4 +28,9 @@ public partial class Liste
         this.IdProjetNavigation = idProjetNavigation;
 
     }
+
+      public void changeNom(string nouveauNom)
+        {
+            Nom = nouveauNom;
+        }
 }

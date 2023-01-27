@@ -28,6 +28,8 @@ namespace ConsoleApp
             // //Ajout projets
             // var proj = new Projet("Trello", "Créer la BDD", new DateTime(2023,01,17));
             // repoProjet.AddEntity(proj);
+            // var proj2 = new Projet("Test 2","Tester la deuxième méthode par défaut", DateTime.Today);
+            // repoProjet.AddEntity(proj2);
 
             //Ajout listes
             // var proj = new Projet();
@@ -60,11 +62,11 @@ namespace ConsoleApp
             // repoCommentaire.AddEntity(commentaire1);
 
             // //Ajout etiquette
-            var carte = new Carte ();
-            carte = repoCarte.Find(1);
-            var etiquette = new Etiquette("Important", "Jaune", 1, carte);
+            // var carte = new Carte ();
+            // carte = repoCarte.Find(2);
+            // var etiquette = new Etiquette("Urgent", "Rouge", 2, carte);
             // var etiquette1 = new Etiquette("Important", "Jaune", 1, carte);
-            repoEtiquette.AddEntity(etiquette);
+            // repoEtiquette.AddEntity(etiquette);
             // repoEtiquette.AddEntity(etiquette1);
             
 
@@ -72,11 +74,21 @@ namespace ConsoleApp
             // var userProj = new UtilisateurProjet(1, 1, proj, user2);
             // repoUtilisateurProjet.AddEntity(userProj);
 
+        //    var card = new Carte();
+        //    card = repoCarte.Find(1);
+        //    card.changeListe(repoListe.Find(2));
+        //    repoListe.UpdateEntity();
+
            
-           
-           
+           Carte card = new Carte();
+           System.Console.WriteLine(repoCarte.Find(1).IdListeNavigation);
+           card.GetEtiquettes();
+           //System.Console.WriteLine(card.Recherche("Urgent"));
             
             
         }
     }
 }
+
+
+        

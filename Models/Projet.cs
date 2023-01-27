@@ -30,4 +30,16 @@ public partial class Projet
         this.DateCreation = dateCreation;
         
     }
+
+    public void changeNom(string nouveauNom)
+    {
+        Nom = nouveauNom;
+    }
+
+    public void changeDescription(string nouvelleDescription)
+    {
+        Description = nouvelleDescription;
+    }
+
+
 }
