@@ -18,61 +18,67 @@ namespace ConsoleApp
             Repository<UtilisateurProjet> repoUtilisateurProjet = new Repository<UtilisateurProjet>(context);
 
             // Ajout utilisateurs
-            // var proj = new Projet();  // Constructeur vide pour utiliser la méthode Read afin de pouvoir ajouter plusieur listes à un même projet
-            // proj = repoProjet.ReadEntity(1);
-            // var user1 = new Utilisateur("Fairchild","fd@gmail.com", "fd0001", new DateTime(2023,01,26));
-            // var user2 = new Utilisateur("Angel","ange@gmail.com", "an0011", new DateTime(2023,01,25));
-            // repo.AddEntity(user1);
-            // repo.AddEntity(user2);
+            var user1 = new Utilisateur("Fairchild","fd@gmail.com", "fd0001", DateTime.Now);
+            var user2 = new Utilisateur("Angel","ange@gmail.com", "an0011", DateTime.Now);
+            var user3 = new Utilisateur("Schiffon", "schi@gmail.com", "sc1100", DateTime.Now);
+            // repoUtilisateur.AddEntity(user1);
+            // repoUtilisateur.AddEntity(user2);
+            // repoUtilisateur.AddEntity(user3);
 
             // //Ajout projets
-            // var proj = new Projet("Trello", "Créer la BDD", new DateTime(2023,01,17));
+            // var proj = new Projet();  // Constructeur vide pour utiliser la méthode Read afin de pouvoir ajouter plusieur listes à un même projet
+            // repoProjet.Find();
+            var proj = new Projet("Trello", "Créer la BDD", DateTime.Now);
+            var proj2 = new Projet("Test 2","Tester la deuxième méthode par défaut", DateTime.Now);
             // repoProjet.AddEntity(proj);
-            // var proj2 = new Projet("Test 2","Tester la deuxième méthode par défaut", DateTime.Today);
             // repoProjet.AddEntity(proj2);
 
             //Ajout listes
-            // var proj = new Projet();
-            // proj = repoProjet.ReadEntity(1);
-            // var list = new Liste("Liste 1", 1, proj);
-            // var list1 = new Liste("Liste 2", 1, proj);
-            // var list2 = new Liste("Liste 3", 1, proj);
+            // repoProjet.Find();
+            var list = new Liste("Liste 1", 1, proj);
+            var list1 = new Liste("Liste 2", 1, proj);
+            var list2 = new Liste("Liste 3", 1, proj2);
             // repoListe.AddEntity(list);
             // repoListe.AddEntity(list1);
             // repoListe.AddEntity(list2);
 
             // //Ajout cartes
-            // var list = new Liste();
-            // list = repoListe.ReadEntity(1);
-            // var card = new Carte("A faire", "Travailler sur la bdd", new DateTime(2023,01,17),1,list);
-            // var card1 = new Carte("A faire", "Mettre à jour la bdd", new DateTime(2023,01,26),1,list1);
-            // var card2 = new Carte("A faire", "Tester la bdd", new DateTime(2023,01,26),1,list);
+            // repoListe.Find();
+            var card = new Carte("A faire", "Travailler sur la bdd", 1,list, DateTime.Now);
+            var card1 = new Carte("A faire", "Mettre à jour la bdd", 1,list1, DateTime.Now);
+            var card2 = new Carte("A faire", "Tester la bdd", 2,list1, DateTime.Now);
             // repoCarte.AddEntity(card);
             // repoCarte.AddEntity(card1);
             // repoCarte.AddEntity(card2);
 
             // //Ajout commentaires  
-            // var card = new Carte();
-            // card = repoCarte.ReadEntity(1);       
+            // repoCarte.Find();       
             // var user = new Utilisateur();
             // user = repoUtilisateur.ReadEntity(2); 
-            // var commentaire = new Commentaire("Cela avant doucement mais sûrement", new DateTime(2023,01,26),1,2, card, user1);
-            // var commentaire1 = new Commentaire("Update en cours", new DateTime(2023,01,26),2,2, card, user);
+            var commentaire = new Commentaire("Cela avant doucement mais sûrement", 1,1, card, user1, DateTime.Now);
+            var commentaire1 = new Commentaire("Update en cours", 2,2, card, user2, DateTime.Now);
             // repoCommentaire.AddEntity(commentaire);
             // repoCommentaire.AddEntity(commentaire1);
 
-            // //Ajout etiquette
-            // var carte = new Carte ();
-            // carte = repoCarte.Find(2);
-            // var etiquette = new Etiquette("Urgent", "Rouge", 2, carte);
-            // var etiquette1 = new Etiquette("Important", "Jaune", 1, carte);
+            // //Ajout etiquette            
+            // repoCarte.Find();
+            var etiquette = new Etiquette("Urgent", "Rouge", 1, card);
+            var etiquette1 = new Etiquette("Important", "Jaune", 1, card);
+            var etiquette2 = new Etiquette("Important", "Jaune", 2, card1);
+            var etiquette3 = new Etiquette("Fait", "Vert", 3, card2);
+            var etiquette4 = new Etiquette("Test", "Violet", 1,repoCarte.Find(1));
             // repoEtiquette.AddEntity(etiquette);
             // repoEtiquette.AddEntity(etiquette1);
+            // repoEtiquette.AddEntity(etiquette2);
+            // repoEtiquette.AddEntity(etiquette3);
+            // repoEtiquette.AddEntity(etiquette4);
             
 
             // //Ajout utilisateurProjet
-            // var userProj = new UtilisateurProjet(1, 1, proj, user2);
+            var userProj = new UtilisateurProjet(1, 1, proj, user1);
+            var userProj2 = new UtilisateurProjet(2,2, proj2, user2);
             // repoUtilisateurProjet.AddEntity(userProj);
+            // repoUtilisateurProjet.AddEntity(userProj2);
 
         //    var card = new Carte();
         //    card = repoCarte.Find(1);
@@ -80,10 +86,10 @@ namespace ConsoleApp
         //    repoListe.UpdateEntity();
 
            
-           Carte card = new Carte();
-           System.Console.WriteLine(repoCarte.Find(1).IdListeNavigation);
-           card.GetEtiquettes();
-           //System.Console.WriteLine(card.Recherche("Urgent"));
+        //    Carte card5 = new Carte();
+        //    System.Console.WriteLine(repoCarte.Find(1).IdListeNavigation);
+        //    card5.GetEtiquettes();
+        //    System.Console.WriteLine(card.Recherche("Urgent"));
             
             
         }
@@ -91,4 +97,3 @@ namespace ConsoleApp
 }
 
 
-        

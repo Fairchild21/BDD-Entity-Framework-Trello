@@ -13,9 +13,9 @@ public partial class Projet
 
     public DateTime? DateCreation { get; set; }
 
-    public virtual ICollection<Liste> Listes { get; } = new List<Liste>();
+    public virtual List<Liste> Listes { get; } = new List<Liste>();
 
-    public virtual ICollection<UtilisateurProjet> UtilisateurProjets { get; } = new List<UtilisateurProjet>();
+    public virtual List<UtilisateurProjet> UtilisateurProjets { get; } = new List<UtilisateurProjet>();
 
     public Projet()
     {
@@ -40,6 +40,17 @@ public partial class Projet
     {
         Description = nouvelleDescription;
     }
+
+    public void addList(Liste liste)
+    {
+        Listes.Add(liste);
+        liste.IdProjetNavigation = this;
+    }
+
+    // public void AddUtilsiateur(Utilisateur utilisateur)
+    // {
+    //     utilisateur.
+    // }
 
 
 }

@@ -94,7 +94,7 @@ public partial class ProjetContext : DbContext
 
             entity.ToTable("Etiquette");
 
-            entity.HasIndex(e => e.IdCarte, "UQ__Etiquett__AB8B6B38D0A789DD").IsUnique();
+            // entity.HasIndex(e => e.IdCarte, "UQ__Etiquett__AB8B6B38D0A789DD").IsUnique();
 
             entity.Property(e => e.IdEtiquette).HasColumnName("ID_etiquette");
             entity.Property(e => e.Couleur)

@@ -15,9 +15,9 @@ public partial class Utilisateur
 
     public DateTime? DateInscription { get; set; }
 
-    public virtual  ICollection<Commentaire> Commentaire { get;}
+    public virtual  List<Commentaire> Commentaire { get;}
 
-    public virtual ICollection<UtilisateurProjet> UtilisateurProjets { get; } = new List<UtilisateurProjet>();
+    public virtual List<UtilisateurProjet> UtilisateurProjets { get; } = new List<UtilisateurProjet>();
 
     public Utilisateur()
     {
@@ -33,4 +33,5 @@ public partial class Utilisateur
         this.DateInscription = dateInscription;
         
     }
+    
 }

@@ -11,7 +11,7 @@ public partial class Liste
 
     public int? IdProjet { get; set; }
 
-    public virtual ICollection<Carte> Cartes { get; } = new List<Carte>();
+    public virtual List<Carte> Cartes { get; } = new List<Carte>();
 
     public virtual Projet? IdProjetNavigation { get; set; }
 

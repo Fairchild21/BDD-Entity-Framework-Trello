@@ -13,13 +13,13 @@ public partial class Carte
 
     public DateTime? DateCreation { get; set; }
 
-    public int? IdListe { get; set; }
+    public int? IdListe {get; set;}
 
-    public virtual ICollection<Commentaire> Commentaire {get;}
+    public virtual List<Commentaire> Commentaire {get;}
 
-    public virtual ICollection<Etiquette> Etiquette {get;}
+    public virtual List<Etiquette> Etiquette {get;}
 
-    public virtual Liste? IdListeNavigation { get; set; }
+    public virtual Liste? IdListeNavigation {get; set;}
 
     public Carte()
     {
@@ -51,12 +51,12 @@ public partial class Carte
         Titre = nouvelleDescription;
     }
 
-    public ICollection<Etiquette> GetEtiquettes()
+    public List<Etiquette> GetEtiquettes()
     {
         return Etiquette;
     }
 
-    public ICollection<Commentaire> GetCommentaires()
+    public List<Commentaire> GetCommentaires()
     {
         return Commentaire;
     }
